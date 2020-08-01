@@ -25,7 +25,7 @@ phone = '' # your number
 url_endpoint = '' # unique endpoint calendly assigns to each host's account
 
 for day in days_to_sign_up:
-    driver.get(f'https://calendly.com/{url_endpoint}/60?back=1&month=2020-0{month_num}') 
+    driver.get(f'https://calendly.com/{url_endpoint}/60?back=1&month=2020-{month_num}') 
     time.sleep(3)
     sign_up_day = driver.find_elements_by_xpath('//button[@class="_2lqEN___day-Button__cls1 U5hxE___day-Button__bookable _1Qg-r___BareButton__cls1 _2zIir___index-UnstyledButton__cls1"]')
 
